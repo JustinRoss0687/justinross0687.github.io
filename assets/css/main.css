@@ -2764,7 +2764,7 @@ h1 {
 	top: 20px;
 	right: 30px;
 	transition: all 500ms;
-	font-size: 24px;
+	font-size: 30px;
 	font-weight: bold;
 	text-decoration: none;
 	color: #333;
@@ -2775,7 +2775,7 @@ h1 {
 .popup .content {
 	max-height: 30%;
 	overflow: auto;
-	font-size: 16px;
+	font-size: 20px;
 	text-align: justify;
 	text-justify: inter-word;
 	line-height: 1.5;
