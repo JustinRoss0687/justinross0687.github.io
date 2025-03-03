@@ -131,7 +131,7 @@ input, select, textarea {
 	}
 
 		h2.alt {
-			color: #888;
+			color: #1b1b1b;
 		}
 
 			h2.alt strong {
@@ -1971,46 +1971,47 @@ input, select, textarea {
 		}
 
 /* Button */
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+button,
+.button {
+    position: relative;
+    display: inline-block;
+    border-radius: 50px;
+    color: #fff !important;
+    text-decoration: none;
+    padding: 0.75em 2.5em;
+    background-color: #a89f91; /* Soft taupe color */
+    border: 0;
+    cursor: pointer;
+    background-image: linear-gradient(145deg, #a89f91, #8e8b7d); /* Gradient for depth */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
 
-	input[type="button"],
-	input[type="submit"],
-	input[type="reset"],
-	button,
-	.button {
-		position: relative;
-		display: inline-block;
-		border-radius: 0.35em;
-		color: #fff !important;
-		text-decoration: none;
-		padding: 0.75em 2.5em 0.75em 2.5em;
-		background-color: #8ebebc;
-		border: 0;
-		cursor: pointer;
-		background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15)), url("images/overlay.png");
-		background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15)), url("images/overlay.png");
-		background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15)), url("images/overlay.png");
-		background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15)), url("images/overlay.png");
-		-moz-transition: background-color 0.35s ease-in-out;
-		-webkit-transition: background-color 0.35s ease-in-out;
-		-ms-transition: background-color 0.35s ease-in-out;
-		transition: background-color 0.35s ease-in-out;
-	}
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+button:hover,
+.button:hover {
+    background-color: #8e8b7d; /* Darker taupe for hover effect */
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
 
-		input[type="button"]:hover,
-		input[type="submit"]:hover,
-		input[type="reset"]:hover,
-		button:hover,
-		.button:hover {
-			background-color: #9ececc;
-		}
+input[type="button"]:active,
+input[type="submit"]:active,
+input[type="reset"]:active,
+button:active,
+.button:active {
+    background-color: #7a7565; /* Even deeper taupe for active state */
+    transform: translateY(2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
-		input[type="button"]:active,
-		input[type="submit"]:active,
-		input[type="reset"]:active,
-		button:active,
-		.button:active {
-			background-color: #7eaeac;
-		}
 
 /* Item */
 
@@ -2250,11 +2251,19 @@ input, select, textarea {
 			box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
 			text-align: center;
 			background-image: url("images/overlay.png");
+
+			header p {
+				font-size: 1em;
+				line-height: 1.5;
+				color: #ffffff;
+				font-family: 'Open Sans', sans-serif;
+				margin-top: 0.5em;
+			  }
 		}
 
 			#main > section.dark {
-				color: #ddd;
-				color: rgba(255, 255, 255, 0.75);
+				color: #000000;
+				color: rgba(0, 0, 0, 0.75);
 			}
 
 				#main > section.dark h2, #main > section.dark h3, #main > section.dark h4, #main > section.dark h5, #main > section.dark h6 {
@@ -2262,17 +2271,17 @@ input, select, textarea {
 				}
 
 				#main > section.dark strong {
-					color: #fff;
+					color: #ffffff;
 					border-color: inherit;
 				}
 
 				#main > section.dark a {
-					color: #fff;
+					color: #ffffff;
 					border-color: inherit;
 				}
 
 					#main > section.dark a:hover {
-						border-bottom-color: rgba(255, 255, 255, 0);
+						border-bottom-color: rgba(129, 129, 129, 0);
 					}
 
 			#main > section.cover {
@@ -2282,19 +2291,21 @@ input, select, textarea {
 			}
 
 			#main > section.one {
-				background-color: #81918E;
-				background-image: url("../../images/StarTrail.jpg");
+				/* background-color: #faecd2; */
+				background-image: linear-gradient(#faecd2, #000000);
+				/* background-image: url("../../images/StarTrail.jpg"); */
 			}
 
 			#main > section.two {
-				background-image: linear-gradient(#130e0a, #000009);
+				background-image: linear-gradient(#000000, #000000);
 				/* background-color: #08131c; */
 			}
 
 			#main > section.three {
-				background-image: url("../../images/Atmosphere.jpg");
+				/* background-image: url("../../images/Atmosphere.jpg"); */
 				background-size: cover;
 				background-position: center center;
+				background-image: linear-gradient(#000000, #3f3f3f);
 				/* background-size: 950px; */
 			}
 
@@ -2737,48 +2748,182 @@ h1 {
 	transition: opacity 500ms;
 	visibility: hidden;
 	opacity: 0;
-}
-.overlay:target {
+  }
+  
+  .overlay:target {
 	visibility: visible;
 	opacity: 0.95;
-}
+  }
 
-.popup {
+  .popup {
 	margin: 70px auto;
 	padding: 20px;
 	background: #fff;
 	border-radius: 5px;
 	width: 70%;
 	position: relative;
-	/* transition: all 5s ease-in-out; */
-}
+  }
 
 .popup h2 {
 	margin-top: 0;
 	color: #333;
-	font-family: Tahoma, Arial, sans-serif;
-	font-size: 30px;
+	/* font-family: Tahoma, Arial, sans-serif; */
+	/* font-size: 30px; */
 }
+
 .popup .close {
 	position: absolute;
 	top: 20px;
 	right: 30px;
-	transition: all 500ms;
 	font-size: 30px;
 	font-weight: bold;
 	text-decoration: none;
 	color: #333;
-}
+  }
+
 .popup .close:hover {
 	color: #7b2cd3;
 }
+
 .popup .content {
 	max-height: 30%;
 	overflow: auto;
 	font-size: 17.5px;
 	text-align: justify;
-	text-justify: inter-word;
 	line-height: 1.5;
+  }
+
+.image-gallery {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+	margin-top: 15px;
+}
+
+.image-gallery img {
+	width: 30%;
+	border-radius: 8px;
+	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card {
+	background: #ffffff; 
+	border-radius: 10px;
+	padding: 15px;
+	text-align: center;
+	transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+	box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+.card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.card h3 {
+	color: #000000;
+	margin-top: 10px;
+}
+
+.card p {
+	color: #000000;
+	font-size: 0.9em;
+}
+
+.image.fit img {
+	border-radius: 8px;
+	width: 100%;
+	transition: opacity 0.3s ease-in-out;
+}
+
+.image.fit img:hover {
+	opacity: 0.8;
+}
+
+
+#portfolio header h2 {
+    background: linear-gradient(135deg, #faecd2, #ffffff);
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#portfolio header h2 {
+    font-size: 2.5rem;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#portfolio p {
+    font-size: 1.3rem;
+    color: white;
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#portfolio header h2 {
+    font-size: 2.5rem;
+    color: #fff;
+    animation: fadeInUp 1s ease-out;
+}
+
+#portfolio p {
+    font-size: 1.1rem;
+    color: #fff;
+    animation: fadeInUp 1.2s ease-out;
+    margin-top: 10px;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#portfolio-header header h2 {
+    font-size: 2.5rem;
+    color: #333;
+    transition: transform 0.3s ease;
+}
+
+#portfolio-header header h2:hover {
+    transform: translateY(-5px);
+}
+
+#portfolio-header p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* About Me Header */
+#about-header h2 {
+    background: linear-gradient(135deg, #faecd2, #ffffff);
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    font-size: 2.5rem;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#about p {
+    color: #fff; /* White text color */
+    font-size: 1.2rem; /* Optional: adjust font size for readability */
+    line-height: 1.9; /* Optional: adjust line height for better spacing */
 }
 
 @media screen and (max-width: 700px){

@@ -15,9 +15,9 @@
 
 					<!-- Logo -->
 						<div id="logo">
-							<span class="image avatar48"><img src="images/ProfilePic.png"  alt="" /></span>
+							<span class="image avatar48"><img src="images/JustinProfileImage.jpg"  alt="" /></span>
 							<h1 id="title">Justin Ross</h1>
-							<p>Student Software Developer</p>
+							<p>Software and Game Developer</p>
 						</div>
 
 					<!-- Nav -->
@@ -38,7 +38,7 @@
 							<li><a href="https://www.linkedin.com/in/justin-ross-834852179" target="_blank" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
 							<li><a href="https://www.facebook.com/profile.php?id=100024341193910" target="_blank" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
 							<!-- <li><a href="https://github.com/JustinRoss0687" target="_blank" class="icon brands fa-github"><span class="label">Github</span></a></li> -->
-							<li><a href="mailto: justinross@cmail.carleton.ca" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+							<li><a href="mailto: justin.ross0687@outlook.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 						</ul>
 
 				</div>
@@ -55,7 +55,7 @@
 
 							<header>
 								<h2 class="alt"><strong>JUSTIN ROSS</strong></h2>
-								<p>Student currently studying Computer Science<br> in the Game Development Stream at Carleton University
+								<p>Computer Science graduate with a specialization in Game Development from Carleton University (Class of 2022). <br> Currently working full-time at Employment and Social Development Canada.
 								</p>
 							</header>
 
@@ -73,7 +73,7 @@
 									<li><a href="https://www.linkedin.com/in/justin-ross-834852179" target="_blank" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
 									<li><a href="https://www.facebook.com/profile.php?id=100024341193910" target="_blank" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
 									<!-- <li><a href="https://github.com/JustinRoss0687" target="_blank" class="icon brands fa-github"><span class="label">Github</span></a></li> -->
-									<li><a href="mailto: justinross@cmail.carleton.ca" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+									<li><a href="mailto: justin.ross0687@outlook.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 								</ul>
 
 						</div>
@@ -85,9 +85,9 @@
 					<section id="portfolio" class="two">
 
 
-						<div class="container">
+						<div class="container" id="portfolio">
 
-							<header>
+							<header id="portfolio-header">
 								<h2>Portfolio</h2>
 							</header>
 
@@ -95,42 +95,54 @@
 
 							<div class="row">
 								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<a href="#popup1" class="image fit"><img src="images/LunarTactics.png" alt="" /></a>
+									<article class="item card">
+										<a href="javascript:void(0);" class="image fit" onclick="openPopup('popup1')">
+											<img src="images/LunarTactics.png" alt="" />
+										</a>
 										<header>
 											<h3>Lunar Tactics</h3>
 										</header>
 									</article>
-									<article class="item">
-										<a href="#popup3" class="image fit"><img src="images/SudokuSolverAI.png" alt="" /></a>
+									<article class="item card">
+										<a href="javascript:void(0);" class="image fit" onclick="openPopup('popup3')">
+											<img src="images/SudokuSolverAI.png" alt="" />
+										</a>
 										<header>
 											<h3>Sudoku Solver</h3>
 										</header>
 									</article>
 								</div>
 								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<a href="#popup6" class="image fit"><img src="images/LitterBugs.png" alt="" /></a>
+									<article class="item card">
+										<a href="javascript:void(0);" class="image fit" onclick="openPopup('popup6')">
+											<img src="images/LitterBugsLevel.png" alt="" />
+										</a>
 										<header>
 											<h3>Litter Bugs (Coming soon)</h3>
 										</header>
 									</article>
-									<article class="item">
-										<a href="#popup2" class="image fit"><img src="images/Sins-of-a-Pilot.png" alt="" /></a>
+									<article class="item card">
+										<a href="javascript:void(0);" class="image fit" onclick="openPopup('popup2')">
+											<img src="images/Sins-of-a-Pilot.png" alt="" />
+										</a>
 										<header>
 											<h3>Sins of a Pilot</h3>
 										</header>
 									</article>
 								</div>
 								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<a href="#popup5" class="image fit"><img src="images/CourseManagement.jpg" alt="" /></a>
+									<article class="item card">
+										<a href="javascript:void(0);" class="image fit" onclick="openPopup('popup5')">
+											<img src="images/CourseManagement.jpg" alt="" />
+										</a>
 										<header>
 											<h3>Course Management System (web-based)</h3>
 										</header>
 									</article>
-									<article class="item">
-										<a href="#popup4" class="image fit"><img src="images/CrazyEights.jpg" alt="" /></a>
+									<article class="item card">
+										<a href="javascript:void(0);" class="image fit" onclick="openPopup('popup4')">
+											<img src="images/CrazyEights.jpg" alt="" />
+										</a>
 										<header>
 											<h3>Crazy Eights</h3>
 										</header>
@@ -141,12 +153,46 @@
 
 
 						</div>
+
+						<div class="container">
+							<br>
+							<header id="portfolio-header">
+								<h2>Personal Projects</h2>
+							</header>
+
+							<p>Here is a list of personal projects I have worked on recently</p>
+
+							<div class="row">
+								<div class="col-4 col-12-mobile">
+									<article class="item card">
+										<a href="javascript:void(0);" class="image fit" onclick="openPopup('popup7')">
+											<img src="images/Yurt_Interior_3.png" alt="Yurt Interior 3D Model" />
+										</a>
+										<header>
+											<h3>Yurt Interior - 3D Model</h3>
+											<!-- <p>A cozy and luxurious yurt design, blending modern aesthetics with nature.</p> -->
+										</header>
+									</article>
+								</div>
+								<div class="col-4 col-12-mobile">
+									<article class="item card">
+										<a href="javascript:void(0);" class="image fit" onclick="openPopup('popup8')">
+											<img src="images/HouseOnRemoteIsland.png" alt="Remote House VR Walkthrough" />
+										</a>
+										<header>
+											<h3>Remote House - VR Walkthrough</h3>
+											<!-- <p>Explore a detailed house on a procedurally generated island in VR.</p> -->
+										</header>
+									</article>
+								</div>
+							</div>
+						</div>
 					</section>
 
 					<div id="popup1" class="overlay">
 						<div class="popup">
 							<h2>Lunar Tactics</h2>
-							<a class="close" href="#">&times;</a>
+							<a class="close" href="javascript:void(0);" onclick="closePopup('popup1')">&times;</a>
 							<div class="content">
 								Lunar Tactics is a real-time strategy game made unsing the Unity engine. This was completed in cooperation with another student. This game includes the use of <b>animations, physics, AI, pathfinding, interations, and models.</b><br> <br>
 								<p><b>Gameplay:</b>
@@ -161,7 +207,7 @@
 					<div id="popup2" class="overlay">
 						<div class="popup">
 							<h2>Sins of a Pilot</h2>
-							<a class="close" href="#">&times;</a>
+							<a class="close" href="javascript:void(0);" onclick="closePopup('popup2')">&times;</a>
 							<div class="content">
 								Developed a 3D 3rd person shooter rogue-like video game written in <b>C++</b> using <b>OpenGL</b> to render.	Implemented a large textured height field terrain with collision detection, screen space special effects, particle systems, models and hierarchical objects.	Acted collaboratively with another student. Used <b>GitHub</b> to push, pull and create tasks to ensure we worked efficiently and ensure timelines were met
 								<br> <br>
@@ -174,7 +220,7 @@
 					<div id="popup3" class="overlay">
 						<div class="popup">
 							<h2>Sudoku Solver AI</h2>
-							<a class="close" href="#">&times;</a>
+							<a class="close" href="javascript:void(0);" onclick="closePopup('popup3')">&times;</a>
 							<div class="content">
 								This project uses the implementation of the <b>Backtracking Algorithm</b> for solving Sudoku puzzles. This process includes the Constraint Satisfaction Problem which is a class of problems which may be represented in terms of variables (a, b, …), domains (a in [1, 2, 3], …), and constraints (a < b, …). For each backtracking step, empty cells could be assigned numbers sequentially or, by using the minimum-value-remaining heuristic (mvrh) or, by using the degree heuristic. Sequentially meaning to go through the list inorder, minimum-value-remaining heuristic meaning to use the empty cell with the least domain length, and the degree heuristic similar to the mvrh but chooses between multiple cells that have the same domain length and chooses the best option.
 								<br> <br>
@@ -187,7 +233,7 @@
 					<div id="popup4" class="overlay">
 						<div class="popup">
 							<h2>Crazy Eights</h2>
-							<a class="close" href="#">&times;</a>
+							<a class="close" href="javascript:void(0);" onclick="closePopup('popup4')">&times;</a>
 							<div class="content">
 								Designed, coded and tested a networked Java implementation of the game Crazy Eights for 3 and 4 players. Developed my code using <b>Github, IntelliJ IDEA, Maven, Java 1.8 and SpringBoot.</b>
 								<br> <br>
@@ -200,7 +246,7 @@
 					<div id="popup5" class="overlay">
 						<div class="popup">
 							<h2>Course Management System</h2>
-							<a class="close" href="#">&times;</a>
+							<a class="close" href="javascript:void(0);" onclick="closePopup('popup5')">&times;</a>
 							<div class="content">
 								Developed a web-based Course Management System that deals with multiple academic years and their multiple deadlines, each consisting of 3 terms (Fall, Winter, Summer). Inplemented the use of <b>Java</b>, multiple <b>Design Patterns</b> such as (Observer, Factory, Visitor, Strategy/Decorator/Composite, and Facade Patterns). Included the use of <b>SpringBoots CRUD Restful API</b>. Finally Implemented the use of <b>MongoDB Database</b> to store documents and array-like objects.
 								<br> <br>
@@ -213,7 +259,7 @@
 					<div id="popup6" class="overlay">
 						<div class="popup">
 							<h2>Litter Bugs</h2>
-							<a class="close" href="#">&times;</a>
+							<a class="close" href="javascript:void(0);" onclick="closePopup('popup6')">&times;</a>
 							<div class="content">
 								Litter Bugs is a multiplayer family-friendly game where the players are trying to collaborate in cleaning up an environment from litter. As a player, you will be faced with constant chaotic forces such as the citizens littering, and nature spreading trash around.
 								<br><br>
@@ -225,11 +271,52 @@
 						</div>
 					</div>
 
+					<div id="popup7" class="overlay">
+						<div class="popup">
+							<h2>Modern Yurt - 3D Model</h2>
+							<a class="close" href="javascript:void(0);" onclick="closePopup('popup7')">&times;</a>
+							<div class="content">
+								This is a highly detailed, fully rendered 3D model of a modern yurt interior, designed and created entirely by me using <b>Blender</b>. Driven by my passion for architecture and design, I took on this project alone to explore the seamless integration of nature and luxury within a compact living space.
+								<br><br>
+								The model features a cozy sleeping area, a functional yet stylish living space, and carefully curated decor that enhances warmth and comfort. With natural materials, ambient lighting, and a harmonious layout, this design embodies a balance between modern aesthetics and the timeless appeal of traditional yurts.
+								<br><br>
+								<!-- Image Gallery -->
+								<div class="image-gallery">
+									<img src="images/Yurt_Interior_2.png" alt="Yurt Interior View 1">
+									<img src="images/Yurt_Interior_5.png" alt="Yurt Interior View 2">
+									<img src="images/Yurt_Interior_9.png" alt="Yurt Interior View 3">
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div id="popup8" class="overlay">
+						<div class="popup">
+							<h2>VR Walkthrough - 3D Model</h2>
+							<a class="close" href="javascript:void(0);" onclick="closePopup('popup8')">&times;</a>
+							<div class="content">
+								This is a fully immersive VR experience developed for the <b>Oculus Quest 2</b>, combining detailed architectural design with procedural world generation.
+								Using <b>Blender</b>, I designed a highly detailed 3D house interior that players can explore in first-person VR.
+								<br><br>
+								Built in <b>Unity</b>, this project blends realistic interior design with an open-world feel, offering users the freedom to roam both indoors and across the landscape.
+								The environment extends beyond the house into a procedurally generated remote island, surrounded by an ocean, allowing for seamless exploration.
+								<br><br>
+								<!-- Image Gallery -->
+								<div class="image-gallery">
+									<img src="images/Kitchen.png" alt="House Interior View 1">
+									<img src="images/LivingRoom.png" alt="House Interior View 2">
+									<img src="images/FrontDoor.png" alt="House Interior View 3">
+								</div>
+							</div>
+						</div>
+					</div>
+				
+
 				<!-- About Me -->
 					<section id="about" class="three">
 
 						<div class="container">
-							<header>
+							<header id="about-header">
 								<h2>About Me</h2>
 							</header>
 						</div>
@@ -240,7 +327,7 @@
 
 							<a class="image featured"><img src="images/Programmer.png" alt="" /></a>
 
-							<p>Working on software development projects with an open mind for learning. Passionate about the integration of technology and user experience, and the implementation of efficient design paradigms. I am open to any challenge that comes my way, especially when it involves teamwork. Looking for a fall 2022 coop/intership to further expand my knowledge. Feel free to contact me through my email address or LinkedIn profile</p>
+							<p>Software developer passionate about integrating technology and user experience while implementing efficient design paradigms. Always eager to learn and tackle new challenges, especially in collaborative environments. Feel free to reach out via email or LinkedIn!</p>
 
 						</div>
 					</section>
@@ -284,6 +371,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/popup.js"></script>
 
 	</body>
 </html>
